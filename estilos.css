@@ -1,0 +1,30 @@
+body {
+background-image:url("img/fondo.jpg");
+background-repeat: repeat-x;
+ }
+ 
+.titulo {
+color:white;
+background-color:#0A1847; 
+padding:10px;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 1px solid #005883;
+ }
+
+.tabla_consulta {
+	border: 1px solid black;
+}
+
+.formulario {
+max-width:600px; 
+margin-right:auto; 
+margin-left:auto
+}
+
+.formulario2 {
+max-width:400px; 
+margin-right:auto; 
+margin-left:auto
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head  class="header">
+
+<link rel="icon" type="image/ico" href="../img/logo.png" />
+<link rel="stylesheet" type="text/css" href="../estilos.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Calculadora Resistencias</title>
+<meta http-equiv="content-language" content="es" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../index.html">Fox Electronics</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="../administrador.html">Administrador</a></li>
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Inventario <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../inventario/ingresar.html">Ingresar producto</a></li>
+          <li><a href="../inventario/actualizar.html">Actualizar producto</a></li>
+		  <li><a href="../inventario/eliminar.html">Eliminar producto</a></li>
+          <li><a href="../inventario/consultar.html">Consultar producto</a></li>
+        </ul>
+      </li>
+	  <li><a href="../ventas.html">Ventas</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><font color="white">Utilidades</font> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../utilidades/ganancias.html">Calculadora de ganancias</a></li>
+          <li><a href="../utilidades/resistencias.html">Calculadora de resistencias</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="formulario2">
+
+<h5 align="center" class="titulo">CALCULADORA DE RESISTENCIAS</h1>
+
+
+<script>
+function calcular(){
+    
+    var a = document.f1.b1.value;
+    var b = document.f1.b2.value;
+    var x = document.f1.b3.value;
+    var r = document.f1.c.value;
+    r1= a.toString()+b.toString();
+    r=parseFloat(r1)*parseFloat(x);
+   document.f1.c.value=r;
+    
+}
+</script> 
+
+
+
+<form name="f1" action="resistencia.html" method="POST">
+    
+<div class="form-group">
+<label>Banda 1:</label>     
+<select name="b1" class="form-control">
+<option>- Seleccione un color</option>
+  <option value="0" >Negro</option>
+  <option value="1" >Cafe</option>
+  <option value="2" >Rojo</option>
+  <option value="3" >Naranja</option>
+  <option value="4" >Amarillo</option>
+  <option value="5" >Verde</option>
+  <option value="6" >Azul</option>
+  <option value="7" >morado</option>
+  <option value="8" >Gris</option>
+  <option value="9" >Blanco</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Banda 2:</label>
+<select name="b2" class="form-control">
+<option>- Seleccione un color</option>
+  <option value="0" >Negro</option>
+  <option value="1" >Cafe</option>
+  <option value="2" >Rojo</option>
+  <option value="3" >Naranja</option>
+  <option value="4" >Amarillo</option>
+  <option value="5" >Verde</option>
+  <option value="6" >Azul</option>
+  <option value="7" >morado</option>
+  <option value="8" >Gris</option>
+  <option value="9" >Blanco</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Banda 3:</label>
+<select name="b3" class="form-control">
+<option>- Seleccione un color</option>
+  <option value="1" >Negro</option>
+  <option value="10" >Cafe</option>
+  <option value="100" >Rojo</option>
+  <option value="1000" >Naranja</option>
+  <option value="10000" >Amarillo</option>
+  <option value="100000" >Verde</option>
+  <option value="1000000" >Azul</option>
+  <option value="10000000" >morado</option>
+  <option value="100000000" >Gris</option>
+  <option value="1000000000" >Blanco</option>
+</select>
+</div>
+
+<div class="form-group">
+  <input type="Button" name="" value="calcular" onclick="calcular()" class="btn btn-primary">
+</div>
+  
+<h5 align="center" class="titulo">RESULTADOS</h5>
+
+  <div class="form-group">
+    <label>Valor de la resistencia:</label>
+    <input type="text" class="form-control" id="c" name="c" style="font-weight:bold">
+  </div>
+
+
+</form>
+
+
+
+
+
+</div>
+
+		
+</body>
+
+</html>
